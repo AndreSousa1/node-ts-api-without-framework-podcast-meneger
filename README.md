@@ -22,7 +22,7 @@ Podcasts produzidos em **formato de vídeo**.
 
 ### Exemplo de resposta da API:
 
-````json
+```json
 [
   {
     "podcastName": "Inteligência Ltda",
@@ -41,26 +41,28 @@ Podcasts produzidos em **formato de vídeo**.
     "category": ["OVNI", "ADNET"]
   }
 ]
+```
 
 ## 🛠️ Estrutura de Pastas
+
 src/
- ├── controllers/         # Controladores (recebem requisições e chamam services)
- │    └── podcasts-controller.ts
- ├── models/              # Modelos de dados (interfaces e tipos)
- │    ├── podcast-Model.ts
- │    └── podcast-Transfer-Model.ts
- ├── repositories/        # Camada de dados (simulação com JSON)
- │    ├── podcasts.json
- │    └── repository-Podcast.ts
- ├── routes/              # Rotas da API
- │    └── routes.ts
- ├── services/            # Regras de negócio
- │    ├── Service-Filter-Episodes.ts
- │    └── Service-List-Episodes.ts
- ├── utils/               # Utilitários e enums
- │    └── status-Code.ts
- ├── app.ts               # Configuração principal do servidor (middleware e rotas)
- └── server.ts            # Ponto de entrada da aplicação
+├── controllers/ # Controladores (recebem requisições e chamam services)
+│ └── podcasts-controller.ts
+├── models/ # Modelos de dados (interfaces e tipos)
+│ ├── podcast-Model.ts
+│ └── podcast-Transfer-Model.ts
+├── repositories/ # Camada de dados (simulação com JSON)
+│ ├── podcasts.json
+│ └── repository-Podcast.ts
+├── routes/ # Rotas da API
+│ └── routes.ts
+├── services/ # Regras de negócio
+│ ├── Service-Filter-Episodes.ts
+│ └── Service-List-Episodes.ts
+├── utils/ # Utilitários e enums
+│ └── status-Code.ts
+├── app.ts # Configuração principal do servidor (middleware e rotas)
+└── server.ts # Ponto de entrada da aplicação
 
 ## ▶️ Como executar
 
@@ -68,6 +70,8 @@ src/
    ```bash
    git clone https://github.com/seu-usuario/gerenciador-de-podcasts.git
    cd gerenciador-de-podcasts
+   ```
+
 ````
 
 2. **Instale as dependências**
@@ -77,9 +81,12 @@ src/
    ```
 
 ````
+
 3. **Configure a porta no arquivo .env**
    ```bash
    PORT=3636
+   ```
+
 ````
 
 4. **Rode o projeto em desenvolvimento**
@@ -88,14 +95,17 @@ src/
    ```
 
 ````
+
 5. **Acesse a API**
    ```bash
    http://localhost:3636/
+   ```
 
-````
+```
 
 ##📡 Endpoints
 
 GET api/list → Lista todos os episódios
 
 GET api/episodes?p=PodcastName → Filtra por nome de podcast
+```
