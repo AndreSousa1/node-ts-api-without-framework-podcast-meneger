@@ -45,6 +45,7 @@ Podcasts produzidos em **formato de vídeo**.
 
 ## 🛠️ Estrutura de Pastas
 
+```
 src/
 ├── controllers/ # Controladores (recebem requisições e chamam services)
 │ └── podcasts-controller.ts
@@ -63,49 +64,43 @@ src/
 │ └── status-Code.ts
 ├── app.ts # Configuração principal do servidor (middleware e rotas)
 └── server.ts # Ponto de entrada da aplicação
+```
 
 ## ▶️ Como executar
 
 1. **Clone o repositório**
+
    ```bash
    git clone https://github.com/seu-usuario/gerenciador-de-podcasts.git
    cd gerenciador-de-podcasts
    ```
-
-````
 
 2. **Instale as dependências**
+
    ```bash
    git clone https://github.com/seu-usuario/gerenciador-de-podcasts.git
    cd gerenciador-de-podcasts
    ```
 
-````
-
 3. **Configure a porta no arquivo .env**
+
    ```bash
    PORT=3636
    ```
 
-````
-
 4. **Rode o projeto em desenvolvimento**
+
    ```bash
    npm run start:dev
    ```
-
-````
 
 5. **Acesse a API**
    ```bash
    http://localhost:3636/
    ```
 
-```
-
-##📡 Endpoints
+## 📡 Endpoints
 
 GET api/list → Lista todos os episódios
 
 GET api/episodes?p=PodcastName → Filtra por nome de podcast
-```
